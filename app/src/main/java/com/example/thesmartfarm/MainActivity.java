@@ -2,66 +2,74 @@ package com.example.thesmartfarm;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
-import android.support.annotation.NonNull;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageButton;
-import android.widget.TextView;
+import android.widget.Button;
+
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private TextView mTextMessage;
-    ImageButton display;
 
+    Button display;
 
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
-
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            switch (item.getItemId()) {
-                case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
-                    return true;
-                case R.id.navigation_dashboard:
-                    mTextMessage.setText(R.string.title_dashboard);
-                    return true;
-                case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
-                    return true;
-            }
-            return false;
-        }
-    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        BottomNavigationView navView = findViewById(R.id.nav_view);
-        mTextMessage = findViewById(R.id.message);
-        navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-        display = (ImageButton) findViewById(R.id.imageButton);
-        ImageButton tombol1 = (ImageButton) findViewById(R.id.imageButton);
-        ImageButton tombol2 = (ImageButton) findViewById(R.id.imageButton2);
+        display = (Button) findViewById(R.id.button);
+        display = (Button) findViewById(R.id.button2);
+        display = (Button) findViewById(R.id.button3);
+        display = (Button) findViewById(R.id.button4);
+        display = (Button) findViewById(R.id.button5);
+
+        Button tombol1 = (Button) findViewById(R.id.button);
+        Button tombol2 = (Button) findViewById(R.id.button2);
+        Button tombol3 = (Button) findViewById(R.id.button3);
+        Button tombol4 = (Button) findViewById(R.id.button4);
+        Button tombol5 = (Button) findViewById(R.id.button5);
 
         tombol1.setOnClickListener(this);
         tombol2.setOnClickListener(this);
+        tombol3.setOnClickListener(this);
+        tombol4.setOnClickListener(this);
+        tombol5.setOnClickListener(this);
 
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.imageButton:
-                openActivity2();
+            case R.id.button:
+                openLight();
+            case R.id.button2:
+                openFlow();
+            case R.id.button3:
+                openNotification();
+            case R.id.button4:
+                openTemperature();
+            case R.id.button5:
+                openPlant();
         }
     }
-    public void openActivity2(){
-        Intent intent = new Intent(this, Activity2.class);
+    public void openLight(){
+        Intent intent = new Intent(this, Light.class);
         startActivity(intent);
     }
-
+    public void openFlow(){
+        Intent intent = new Intent(this, Flow.class);
+        startActivity(intent);
+    }
+    public void openNotification(){
+        Intent intent = new Intent(this, Notification.class);
+        startActivity(intent);
+    }
+    public void openTemperature(){
+        Intent intent = new Intent(this, Temperature.class);
+        startActivity(intent);
+    }
+    public void openPlant(){
+        Intent intent = new Intent(this, Plant.class);
+        startActivity(intent);
+    }
 }

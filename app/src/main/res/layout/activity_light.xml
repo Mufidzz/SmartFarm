@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -31,7 +31,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/light_rgbLight" />
+        app:srcCompat="@drawable/light_rgblight" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -44,7 +44,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/light_currentLighting" />
+        app:srcCompat="@drawable/light_currentlighting" />
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar2"
@@ -63,7 +63,7 @@
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginBottom="52dp"
-        android:fontFamily="@font/quicksand_light"
+        android:fontFamily="sans-serif-black"
         android:text="Recomendation"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
@@ -178,4 +178,4 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

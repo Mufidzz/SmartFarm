@@ -4,5 +4,5 @@
     android:color="@color/colorPrimary"
     tools:targetApi="lollipop">
 
-    <item android:drawable="@drawable/home_deviceA"/>
+    <item android:drawable="@drawable/home_devicea"/>
 </ripple>

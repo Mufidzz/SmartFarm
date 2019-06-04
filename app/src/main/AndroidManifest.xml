@@ -15,7 +15,6 @@
         <activity android:name=".Light" />
         <activity android:name=".Plant" />
         <activity android:name=".Notification" />
-        <activity android:name=".Activity2" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">

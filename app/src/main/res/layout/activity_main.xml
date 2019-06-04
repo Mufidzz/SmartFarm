@@ -131,7 +131,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="270dp"
         android:layout_marginBottom="598dp"
-        android:background="@drawable/home_deviceAcombobox" />
+        android:background="@drawable/home_deviceacombobox" />
 
     <TextView
         android:id="@+id/textView2"
