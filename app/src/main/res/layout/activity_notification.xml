@@ -27,7 +27,7 @@
         android:layout_marginStart="113dp"
         android:layout_marginEnd="114dp"
         android:layout_marginBottom="559dp"
-        app:srcCompat="@drawable/Notification" />
+        app:srcCompat="@drawable/notification" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -39,7 +39,7 @@
         android:layout_marginStart="36dp"
         android:layout_marginEnd="37dp"
         android:layout_marginBottom="411dp"
-        app:srcCompat="@drawable/Notification_text" />
+        app:srcCompat="@drawable/notification_text" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -51,7 +51,7 @@
         android:layout_marginStart="36dp"
         android:layout_marginEnd="37dp"
         android:layout_marginBottom="483dp"
-        app:srcCompat="@drawable/Notification_text" />
+        app:srcCompat="@drawable/notification_text" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -63,7 +63,7 @@
         android:layout_marginStart="37dp"
         android:layout_marginEnd="37dp"
         android:layout_marginBottom="85dp"
-        app:srcCompat="@drawable/Notification_text" />
+        app:srcCompat="@drawable/notification_text" />
 
     <ImageView
         android:id="@+id/imageView11"
@@ -75,7 +75,7 @@
         android:layout_marginStart="37dp"
         android:layout_marginEnd="37dp"
         android:layout_marginBottom="175dp"
-        app:srcCompat="@drawable/Notification_text" />
+        app:srcCompat="@drawable/notification_text" />
 
     <TextView
         android:id="@+id/textView21"

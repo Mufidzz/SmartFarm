@@ -10,20 +10,13 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button display;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        display = (Button) findViewById(R.id.button);
-        display = (Button) findViewById(R.id.button2);
-        display = (Button) findViewById(R.id.button3);
-        display = (Button) findViewById(R.id.button4);
-        display = (Button) findViewById(R.id.button5);
 
-        Button tombol1 = (Button) findViewById(R.id.button);
+        Button tombol1 = (Button) findViewById(R.id.button1);
         Button tombol2 = (Button) findViewById(R.id.button2);
         Button tombol3 = (Button) findViewById(R.id.button3);
         Button tombol4 = (Button) findViewById(R.id.button4);
@@ -40,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.button:
+            case R.id.button1:
                 openLight();
             case R.id.button2:
                 openFlow();
