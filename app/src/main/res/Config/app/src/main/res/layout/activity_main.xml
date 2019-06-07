@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Instagram Story -->
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/instagram_s"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clipToOutline="true"
+        android:background="#333333"
+        />
+    <!-- Component -->
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/component"
+        android:layout_width="776dp"
+        android:layout_height="268dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="152dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="318dp"
+        android:background="#00000000"
+        />
+    <!-- Component 2 -->
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/component_2"
+        android:layout_width="776dp"
+        android:layout_height="160dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="152dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="710dp"
+        android:background="#00000000"
+        />
+    <!-- Component 3 -->
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/component_3"
+        android:layout_width="776dp"
+        android:layout_height="160dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="152dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="909dp"
+        android:background="#00000000"
+        />
+    <!-- Component 4 -->
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/component_4"
+        android:layout_width="776dp"
+        android:layout_height="160dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="152dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="1177dp"
+        android:background="#00000000"
+        />
+</android.support.constraint.ConstraintLayout>
