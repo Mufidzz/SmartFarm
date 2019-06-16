@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.text.*?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="Parent" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.controller.MainMenuController">
+<AnchorPane fx:id="Parent" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.controller.MainMenuController">
    <children>
       <Pane prefHeight="400.0" prefWidth="708.0" style="-fx-background-color: #130E0D;">
          <children>
-            <ImageView fitHeight="433.0" fitWidth="521.0" opacity="0.34" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="400.0" fitWidth="521.0" layoutY="1.0" opacity="0.34" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/lunar_greenhouse_demo_u_of_az_09_b.jpg" />
                </image>
@@ -73,7 +73,7 @@
                         <Image url="@images/home_notification.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="12.0" layoutY="54.0" text="Notification" textFill="WHITE" />
+                  <Label layoutX="4.0" layoutY="54.0" prefWidth="79.0" text="Notification" textFill="WHITE" />
                </children>
             </Pane>
             <Pane layoutX="475.0" layoutY="1.0" prefHeight="400.0" prefWidth="233.0" style="-fx-background-color: #100C0E;">
