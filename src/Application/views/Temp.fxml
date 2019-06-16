@@ -53,16 +53,16 @@
                </font>
             </Label>
             <Slider layoutX="448.0" layoutY="136.0" orientation="VERTICAL" prefHeight="128.0" prefWidth="14.0" />
-            <Group layoutX="70.0" layoutY="27.0">
+            <Group layoutX="20.0" layoutY="20.0">
                <children>
-                  <Label prefHeight="25.0" prefWidth="43.0" text="Home" />
+                  <Label layoutX="50.0" layoutY="7.0" prefHeight="25.0" prefWidth="43.0" text="Home" />
+                  <ImageView fitHeight="43.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/69524.png" />
+                     </image>
+                  </ImageView>
                </children>
             </Group>
-            <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@images/69524.png" />
-               </image>
-            </ImageView>
             <Label layoutX="576.0" layoutY="8.0" prefHeight="25.0" prefWidth="24.0" text="X">
                <font>
                   <Font name="Arial" size="18.0" />
