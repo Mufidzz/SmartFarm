@@ -56,7 +56,14 @@
                   </Label>
                </children>
             </Pane>
-            <Pane layoutX="302.0" layoutY="3.0" prefHeight="57.0" prefWidth="54.0" />
+            <Pane layoutX="302.0" layoutY="3.0" prefHeight="57.0" prefWidth="54.0">
+               <children>
+                  <ImageView fitHeight="39.0" fitWidth="34.0" layoutX="10.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Downloads/WhatsApp%20Image%202019-06-16%20at%2012.49.44.jpeg" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
             <Label layoutX="138.0" layoutY="315.0" text="Celcius" textFill="WHITE">
                <font>
                   <Font name="Arial Bold Italic" size="18.0" />
