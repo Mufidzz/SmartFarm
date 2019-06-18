@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Slider?>
@@ -9,13 +14,13 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="Parent" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.controller.TempController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.views.Temperature">
    <children>
       <Pane prefHeight="400.0" prefWidth="600.0">
          <children>
             <ImageView fitHeight="413.0" fitWidth="612.0" layoutX="-6.0" layoutY="-6.0" pickOnBounds="true">
                <image>
-                  <Image url="@../../../../../Downloads/054cf30c0eb94a694904ee7283f36542.jpg" />
+                  <Image url="@images/054cf30c0eb94a694904ee7283f36542.jpg" />
                </image>
             </ImageView>
             <Pane layoutX="358.0" prefHeight="407.0" prefWidth="248.0" style="-fx-background-color: #100C0E;">
@@ -59,7 +64,7 @@
                <children>
                   <ImageView fitHeight="36.0" fitWidth="37.0" layoutX="9.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../Downloads/WhatsApp%20Image%202019-06-16%20at%2012.49.44.jpeg" />
+                        <Image url="@images/home_white.png" />
                      </image>
                   </ImageView>
                </children>
