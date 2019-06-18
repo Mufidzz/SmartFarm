@@ -1,7 +1,7 @@
 package Application.controller;
 
+import Application.Utils;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
@@ -28,11 +28,30 @@ public class MainMenuController implements Initializable {
     }
 
     public void btnPlant_Clicked() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/Application/views/Plant.fxml"));
-        fxmlLoader.load();
+        new Utils().fxmlLoader("/Application/views/Plant.fxml");
     }
+
     public void btnTemp_Clicked() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/Application/views/Temp.fxml"));
-        fxmlLoader.load();
+        new Utils().fxmlLoader("/Application/views/Temperature.fxml");
+    }
+
+    public void btnConfig_Clicked() throws IOException {
+        new Utils().fxmlLoader("/Application/views/Config.fxml");
+    }
+
+    public void btnFlow_Clicked() throws IOException {
+        new Utils().fxmlLoader("/Application/views/Flow.fxml");
+    }
+
+    public void btnLight_Clicked() throws IOException {
+        new Utils().fxmlLoader("/Application/views/Light.fxml");
+    }
+
+    public void btnNotification_Clicked() throws IOException {
+        new Utils().fxmlLoader("/Application/views/Notification.fxml");
+    }
+
+    public void btnClose_Clicked() {
+        stage.hide();
     }
 }

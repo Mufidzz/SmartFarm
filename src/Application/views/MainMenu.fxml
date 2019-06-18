@@ -24,7 +24,7 @@
                   <Image url="@images/lunar_greenhouse_demo_u_of_az_09_b.jpg" />
                </image>
             </ImageView>
-            <Pane layoutX="40.0" layoutY="124.0" prefHeight="76.0" prefWidth="86.0">
+            <Pane layoutX="40.0" layoutY="124.0" onMouseClicked="#btnLight_Clicked" prefHeight="76.0" prefWidth="86.0">
                <children>
                   <ImageView fitHeight="51.0" fitWidth="45.0" layoutX="21.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -37,7 +37,7 @@
                   <Insets />
                </opaqueInsets>
             </Pane>
-            <Pane layoutX="166.0" layoutY="124.0" prefHeight="76.0" prefWidth="86.0">
+            <Pane layoutX="166.0" layoutY="124.0" onMouseClicked="#btnFlow_Clicked" prefHeight="76.0" prefWidth="86.0">
                <children>
                   <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="21.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -72,14 +72,14 @@
                   <Font name="Arial Bold" size="24.0" />
                </font>
             </Label>
-            <Pane layoutX="289.0" layoutY="124.0" prefHeight="76.0" prefWidth="86.0">
+            <Pane layoutX="289.0" layoutY="124.0" onMouseClicked="#btnNotification_Clicked" prefHeight="76.0" prefWidth="86.0">
                <children>
                   <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="24.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@images/home_notification.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="4.0" layoutY="54.0" prefWidth="79.0" text="Notification" textFill="WHITE" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="4.0" layoutY="54.0" prefWidth="79.0" text="Notification" textAlignment="CENTER" textFill="WHITE" />
                </children>
             </Pane>
             <Pane layoutX="475.0" layoutY="1.0" prefHeight="400.0" prefWidth="233.0" style="-fx-background-color: #100C0E;">
@@ -110,7 +110,7 @@
                   <Label layoutX="15.0" layoutY="362.0" text="Nutrient Level" textFill="WHITE" />
                   <Label layoutX="103.0" layoutY="362.0" text="0%" textFill="WHITE" />
                   <Label layoutX="158.0" layoutY="362.0" text="GOOD" textFill="WHITE" />
-                  <Label fx:id="Quit" layoutX="206.0" layoutY="14.0" text="X" textFill="WHITE">
+                  <Label fx:id="Quit" layoutX="206.0" layoutY="14.0" onMouseClicked="#btnClose_Clicked" text="X" textFill="WHITE">
                      <font>
                         <Font name="Arial" size="18.0" />
                      </font>
@@ -123,7 +123,7 @@
                </font>
             </Label>
             <ComboBox layoutX="177.0" layoutY="68.0" opacity="0.84" prefWidth="150.0" style="-fx-background-color: #100C0E;" />
-            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="435.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="435.0" layoutY="13.0" onMouseClicked="#btnConfig_Clicked" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/home_setting.png" />
                </image>
