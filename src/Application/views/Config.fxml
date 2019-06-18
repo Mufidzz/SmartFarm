@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.Group?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
@@ -8,52 +14,34 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="Parent" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.controller.ConfigController">
+<AnchorPane fx:id="Parent" prefHeight="0.0" prefWidth="295.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.controller.ConfigController">
    <children>
-      <ImageView fitHeight="400.0" fitWidth="600.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="400.0" fitWidth="295.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/solid-lime-green-wallpaper-4.jpg" />
          </image>
       </ImageView>
-      <Pane layoutX="14.0" layoutY="12.0">
+      <Pane layoutX="9.0" layoutY="14.0">
          <children>
-            <Group>
-               <children>
-                  <ImageView fitHeight="43.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@images/home_white.png" />
-                     </image>
-                  </ImageView>
-                  <Label layoutX="55.0" layoutY="13.0" prefHeight="25.0" prefWidth="43.0" text="Home" textFill="WHITE" />
-               </children>
-            </Group>
+            <ImageView fitHeight="25.0" fitWidth="24.0" layoutX="7.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/home_white.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="37.0" layoutY="8.0" prefHeight="17.0" prefWidth="43.0" text="Home" textFill="WHITE" />
          </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Pane>
-      <Label layoutX="574.0" layoutY="9.0" prefHeight="25.0" prefWidth="24.0" text="X" textFill="WHITE">
-         <font>
-            <Font name="Arial" size="18.0" />
-         </font>
-      </Label>
-      <Pane layoutX="112.0" layoutY="100.0" opacity="0.52" prefHeight="66.0" prefWidth="147.0" style="-fx-background-color: White;">
+      <Pane layoutX="19.0" layoutY="69.0" opacity="0.52" prefHeight="66.0" prefWidth="258.0" style="-fx-background-color: White;">
          <children>
-            <Label layoutX="40.0" layoutY="25.0" text="ADD DEVICE" />
+            <Label layoutX="61.0" layoutY="25.0" text="CONNECT OTHER DEVICE" />
          </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Pane>
-      <Pane layoutX="349.0" layoutY="100.0" opacity="0.52" prefHeight="66.0" prefWidth="147.0" style="-fx-background-color: White;">
-         <children>
-            <Label layoutX="40.0" layoutY="25.0" text="EDIT DEVICE" />
-         </children>
-      </Pane>
-      <Pane layoutX="112.0" layoutY="200.0" opacity="0.52" prefHeight="66.0" prefWidth="147.0" style="-fx-background-color: White;">
-         <children>
-            <Label layoutX="33.0" layoutY="25.0" text="DELETE DEVICE" />
-         </children>
-      </Pane>
-      <Pane layoutX="349.0" layoutY="200.0" opacity="0.52" prefHeight="66.0" prefWidth="147.0" style="-fx-background-color: White;">
-         <children>
-            <Label layoutX="17.0" layoutY="25.0" text="CHANGE PASSWORD" />
-         </children>
-      </Pane>
-      <Label layoutX="475.0" layoutY="363.0" text="SmartFarm System" textFill="WHITE" />
+      <Label layoutX="182.0" layoutY="166.0" text="SmartFarm System" textFill="WHITE" />
    </children>
 </AnchorPane>
