@@ -32,7 +32,7 @@ public class MainMenuController implements Initializable {
         fxmlLoader.load();
     }
     public void btnTemp_Clicked() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/Application/views/Temperature.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/Application/views/Temp.fxml"));
         fxmlLoader.load();
     }
 }
