@@ -34,9 +34,9 @@
                         <Font name="Arial Bold" size="24.0" />
                      </font>
                   </Label>
-                  <Slider layoutX="21.0" layoutY="90.0" orientation="VERTICAL" prefHeight="213.0" prefWidth="14.0" />
-                  <Slider layoutX="121.0" layoutY="90.0" orientation="VERTICAL" prefHeight="213.0" prefWidth="14.0" />
-                  <Slider layoutX="210.0" layoutY="90.0" orientation="VERTICAL" prefHeight="213.0" prefWidth="14.0" />
+                  <Slider fx:id="reds" layoutX="21.0" layoutY="90.0" onDragDetected="#red_Changed" onDragDone="#red_Changed" onDragDropped="#red_Changed" onDragEntered="#red_Changed" onDragExited="#red_Changed" onDragOver="#red_Changed" onMouseClicked="#red_Changed" onMouseDragEntered="#red_Changed" onMouseDragOver="#red_Changed" onMouseDragReleased="#red_Changed" onMouseDragged="#red_Changed" onMouseMoved="#red_Changed" onMousePressed="#red_Changed" onMouseReleased="#red_Changed" orientation="VERTICAL" prefHeight="213.0" prefWidth="14.0" showTickMarks="true" snapToTicks="true" />
+                  <Slider fx:id="greens" layoutX="121.0" layoutY="90.0" onDragDetected="#green_Changed" onDragDone="#green_Changed" onDragDropped="#green_Changed" onDragEntered="#green_Changed" onDragExited="#green_Changed" onDragOver="#green_Changed" onMouseClicked="#green_Changed" onMouseDragEntered="#green_Changed" onMouseDragOver="#green_Changed" onMouseDragReleased="#green_Changed" onMouseDragged="#green_Changed" onMouseMoved="#green_Changed" onMousePressed="#green_Changed" onMouseReleased="#green_Changed" orientation="VERTICAL" prefHeight="213.0" prefWidth="14.0" showTickMarks="true" snapToTicks="true" />
+                  <Slider fx:id="blues" layoutX="210.0" layoutY="90.0" onDragDetected="#blue_Changed" onDragDone="#blue_Changed" onDragDropped="#blue_Changed" onDragEntered="#blue_Changed" onDragExited="#blue_Changed" onDragOver="#blue_Changed" onMouseClicked="#blue_Changed" onMouseDragEntered="#blue_Changed" onMouseDragOver="#blue_Changed" onMouseDragReleased="#blue_Changed" onMouseDragged="#blue_Changed" onMouseMoved="#blue_Changed" onMousePressed="#blue_Changed" onMouseReleased="#blue_Changed" orientation="VERTICAL" prefHeight="213.0" prefWidth="14.0" showTickMarks="true" snapToTicks="true" />
                   <Label layoutX="15.0" layoutY="63.0" text="Red" textFill="#ff0606">
                      <font>
                         <Font name="Arial Bold" size="14.0" />
@@ -93,17 +93,17 @@
                   <Font name="Arial Bold" size="24.0" />
                </font>
             </Label>
-            <Label layoutX="213.0" layoutY="148.0" prefHeight="27.0" prefWidth="69.0" text="100%" textFill="RED">
+            <Label fx:id="sred" layoutX="213.0" layoutY="148.0" prefHeight="27.0" prefWidth="69.0" text="100%" textFill="RED">
                <font>
                   <Font name="Arial Bold" size="24.0" />
                </font>
             </Label>
-            <Label layoutX="213.0" layoutY="194.0" text="100%" textFill="#2fff00">
+            <Label fx:id="sgreen" layoutX="213.0" layoutY="194.0" text="100%" textFill="#2fff00">
                <font>
                   <Font name="Arial Bold" size="24.0" />
                </font>
             </Label>
-            <Label layoutX="214.0" layoutY="244.0" text="100%" textFill="#0037ff">
+            <Label fx:id="sblue" layoutX="214.0" layoutY="244.0" text="100%" textFill="#0037ff">
                <font>
                   <Font name="Arial Bold" size="24.0" />
                </font>

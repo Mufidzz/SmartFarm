@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.Group?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -10,14 +16,14 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="Parent" prefHeight="0.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.controller.FlowController">
+<AnchorPane fx:id="Parent" prefHeight="0.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.controller.FlowController">
    <children>
       <ImageView fitHeight="290.0" fitWidth="445.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/solid-lime-green-wallpaper-4.jpg" />
          </image>
       </ImageView>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="118.0" layoutY="76.0" text="999 L" textAlignment="CENTER">
+      <Label fx:id="sflow" alignment="CENTER" contentDisplay="CENTER" layoutX="158.0" layoutY="75.0" text="5 L" textAlignment="CENTER">
          <font>
             <Font name="Arial" size="72.0" />
          </font>
@@ -38,7 +44,7 @@
             <Font name="Arial" size="14.0" />
          </font>
       </Label>
-      <Slider layoutX="99.0" layoutY="200.0" prefHeight="36.0" prefWidth="238.0" />
+      <Slider fx:id="flows" layoutX="99.0" layoutY="200.0" max="5.0" onDragDetected="#flow_Changed" onDragDone="#flow_Changed" onDragDropped="#flow_Changed" onDragEntered="#flow_Changed" onDragExited="#flow_Changed" onDragOver="#flow_Changed" onMouseClicked="#flow_Changed" onMouseDragEntered="#flow_Changed" onMouseDragOver="#flow_Changed" onMouseDragReleased="#flow_Changed" onMouseDragged="#flow_Changed" onMouseMoved="#flow_Changed" onMousePressed="#flow_Changed" onMouseReleased="#flow_Changed" prefHeight="36.0" prefWidth="238.0" showTickMarks="true" snapToTicks="true" />
       <Pane layoutY="240.0" prefHeight="50.0" prefWidth="435.0" style="-fx-background-color: rgba(0,0,0,.25);">
          <children>
             <Label layoutX="75.0" layoutY="15.0" text="Recomendation" textFill="WHITE">
