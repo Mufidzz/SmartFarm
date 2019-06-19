@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 <?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.image.Image?>
@@ -15,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="Parent" prefHeight="0.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.controller.FlowController">
+<AnchorPane fx:id="Parent" prefHeight="0.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.controller.FlowController">
    <children>
       <ImageView fitHeight="290.0" fitWidth="445.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -62,7 +57,7 @@
                </font></Label>
          </children>
       </Pane>
-      <Button layoutX="14.0" layoutY="13.0" mnemonicParsing="false" style="-fx-background-color: rgba(0,0,0,0);" text="Button" textFill="WHITE">
+      <Button layoutX="14.0" layoutY="13.0" mnemonicParsing="false" style="-fx-background-color: rgba(0,0,0,0);" text="Home" textFill="WHITE">
          <graphic>
             <ImageView fitHeight="21.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                <image>

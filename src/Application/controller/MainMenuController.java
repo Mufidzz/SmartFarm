@@ -29,26 +29,32 @@ public class MainMenuController implements Initializable {
 
     public void btnPlant_Clicked() throws IOException {
         new Utils().fxmlLoader("/Application/views/Plant.fxml");
+        stage.hide();
     }
 
     public void btnTemp_Clicked() throws IOException {
         new Utils().fxmlLoader("/Application/views/Temperature.fxml");
+        stage.hide();
     }
 
     public void btnConfig_Clicked() throws IOException {
         new Utils().fxmlLoader("/Application/views/Config.fxml");
+        stage.hide();
     }
 
     public void btnFlow_Clicked() throws IOException {
         new Utils().fxmlLoader("/Application/views/Flow.fxml");
+        stage.hide();
     }
 
     public void btnLight_Clicked() throws IOException {
         new Utils().fxmlLoader("/Application/views/Light.fxml");
+        stage.hide();
     }
 
     public void btnNotification_Clicked() throws IOException {
         new Utils().fxmlLoader("/Application/views/Notification.fxml");
+        stage.hide();
     }
 
     public void btnClose_Clicked() {

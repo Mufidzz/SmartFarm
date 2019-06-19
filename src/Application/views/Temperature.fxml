@@ -30,7 +30,7 @@
                         <Font name="Arial Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Slider layoutX="14.0" layoutY="182.0" prefHeight="15.0" prefWidth="221.0" />
+                  <Slider fx:id="slTemp" blockIncrement="1.0" layoutX="14.0" layoutY="182.0" majorTickUnit="40.0" max="50.0" min="10.0" minorTickCount="40" onDragDetected="#slTemp_Changed" onDragDone="#slTemp_Changed" onDragDropped="#slTemp_Changed" onDragEntered="#slTemp_Changed" onDragExited="#slTemp_Changed" onDragOver="#slTemp_Changed" onMouseClicked="#slTemp_Changed" onMouseDragEntered="#slTemp_Changed" onMouseDragOver="#slTemp_Changed" onMouseDragReleased="#slTemp_Changed" onMouseDragged="#slTemp_Changed" onMouseMoved="#slTemp_Changed" onMousePressed="#slTemp_Changed" onMouseReleased="#slTemp_Changed" prefHeight="15.0" prefWidth="221.0" showTickMarks="true" snapToTicks="true" />
                   <Button layoutX="202.0" layoutY="327.0" mnemonicParsing="false" style="-fx-background-radius: none; -fx-background-color: white;" text="OK" />
                   <Button layoutX="151.0" layoutY="327.0" mnemonicParsing="false" style="-fx-background-radius: none; -fx-background-color: white;" text="Apply" />
                   <Button layoutX="95.0" layoutY="327.0" mnemonicParsing="false" style="-fx-background-radius: none; -fx-background-color: white;" text="Cancel" />
@@ -62,12 +62,12 @@
             </Label>
             <Pane layoutX="82.0" layoutY="124.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #100C0E;">
                <children>
-                  <Label alignment="CENTER" layoutY="36.0" prefHeight="117.0" prefWidth="200.0" text="999" textFill="WHITE">
+                  <Label fx:id="lblTemp" alignment="CENTER" layoutY="36.0" prefHeight="87.0" prefWidth="200.0" text="10" textFill="WHITE">
                      <font>
                         <Font name="Arial Bold" size="96.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" layoutX="55.0" layoutY="143.0" prefHeight="21.0" prefWidth="91.0" text="Celcius" textFill="WHITE">
+                  <Label alignment="CENTER" layoutX="55.0" layoutY="147.0" prefHeight="21.0" prefWidth="91.0" text="Celcius" textFill="WHITE">
                      <font>
                         <Font name="Arial Bold Italic" size="18.0" />
                      </font>

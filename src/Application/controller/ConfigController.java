@@ -25,4 +25,8 @@ public class ConfigController implements Initializable {
 
         stage.show();
     }
+
+    public void btnClose_Clicked() {
+        stage.hide();
+    }
 }
